@@ -33,3 +33,33 @@
   # Result 1
   # 2
 
+class Poly 
+def adding(a) 
+puts "enter 1st num" 
+@a = gets.to_i 
+puts "enter 2nd num" 
+@b = gets.to_i 
+puts "result is" 
+puts @c = @a + @b 
+puts @d=[@a,@b].join.to_i 
+end 
+end 
+
+class Addition < Poly 
+def first
+ adding(@c) 
+end 
+end 
+
+class Concat < Poly 
+def second 
+adding(@d) 
+# puts @c=[@a,@b].join.to_i 
+end 
+end 
+addition=Addition.new
+ puts "-----Adiition------" 
+ addition.first 
+concat=Concat.new 
+puts "------Concatination-------" 
+concat.second
